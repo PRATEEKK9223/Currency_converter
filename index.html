@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <main class="main-container">
+         <h1>Currency Converter</h1>
+            <form name="form">
+                <div class="amount">
+                    <label for="input">Enter Amount</label><br>
+                    <input type="text" id="input" >
+                </div>
+                <section class="dropDowns_Container">
+                <div class="dropDown">
+                    <p>From</p>
+                   <div>
+                        <img src="https://flagsapi.com/IN/shiny/64.png" alt="" id="img1">
+                        <select name="CurrencyCode" class="from">
+                            <!-- <option value="INR">India</option>
+                            <option value="USD">Us</option>
+                            <option value="EUR">EUR</option> -->
+                        </select>
+                   </div>
+                </div>
+                <i class="bi bi-arrow-left-right" id="icon"></i>
+                <div class="dropDown">
+                    <p>To</p>
+                    <div>
+                        <img src="https://flagsapi.com/US/shiny/64.png" alt="" id="img2">
+                        <select name="CurrencyCode" class="to">
+                            <!-- <option value="INR">India</option>
+                            <option value="USD">Us</option>
+                            <option value="EUR">EUR</option> -->
+                        </select>
+                    </div>
+                </div>
+                </section>
+                <div class="msg">
+                    <p>1USD = 80INR</p>
+                </div>
+                <button class="btn">Get The Exchange Rate</button>
+            </form>
+    </main>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="codes.js"></script>
+</body>
+</html>

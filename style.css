@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size:62.5%;
+}
+body{
+    background-color:#E6F4EA;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.main-container{
+    background-color:#fff;
+    width:40rem;
+    height:40rem;
+    border-radius: 20px;
+    display:flex;
+    flex-direction:column;
+    padding:2rem;
+    gap:2rem;
+}
+
+.main-container h1{
+    font-size:3rem;
+    font-weight:700;
+}
+.amount label{
+    font-size:2rem;
+   
+}
+
+.amount input{
+    width:100%;
+    border:none;
+    outline:none;
+    border:1px solid lightgray;
+    height:4rem;
+    border-radius:10px;
+    padding-left:1rem;
+    margin-top:1rem;
+}
+
+.dropDowns_Container{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:2rem;
+}
+
+#icon{
+    font-size:30px;
+}
+.dropDown{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.dropDown p{
+    font-size:1.8rem;
+}
+.dropDown div{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+
+.dropDown div img{
+    object-fit: cover;
+    width:5rem;
+    height:3rem;
+}
+
+.dropDown div select{
+    width:5rem;
+    height:3rem;
+    border:none;
+    outline:none;
+
+}
+
+.msg{
+    text-align: center;
+    margin:4rem auto;
+    font-size:2rem;
+    font-weight: 800;
+    color: #333333;
+}
+
+.btn{
+    display:block;
+    width:20rem;
+    height:4rem;
+    margin:0 auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#D6EAF8;
+    font-size:1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+   
+.btn:hover{
+    transform: scale(1.1); 
+    box-shadow:0 0 10px #000; 
+}
+
+
+/* Responsive Design */
+
+@media(max-width:400px){
+    :root{
+        font-size:58%;
+    }
+}
+
+
+@media(max-width:370px){
+    :root{
+        font-size:55%;
+    }
+
+    /* .main-containe{
+        max-width:37rem;
+    } */
+
+}
+
+@media(max-width:350px){
+    :root{
+        font-size:50%;
+    }
+
+}
+
+
+
